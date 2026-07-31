@@ -11,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Image } from '@imagekit/next';
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -46,12 +47,18 @@ export function Header() {
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-              <GraduationCap className="h-6 w-6" />
+            <div className="flex h-10 w-10 items-center justify-center text-primary-foreground">
+              <Image
+                src="/Little Flower English School/ Little Flower English School Logo.svg" // Make sure this exact file is uploaded in your ImageKit Media Library
+                alt="Little Flower English School Logo"
+                width={150}
+                height={150}
+                priority
+              />
             </div>
             <div className="flex flex-col">
-              <span className="font-serif text-lg font-bold text-foreground">Brightwood</span>
-              <span className="text-xs text-muted-foreground -mt-1">Academy</span>
+              <span className="font-serif text-lg font-bold text-foreground">Little Flower</span>
+              <span className="text-xs text-muted-foreground -mt-1">English School</span>
             </div>
           </Link>
 
@@ -84,9 +91,6 @@ export function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-2">
-            <Button variant="outline" asChild>
-              <Link href="/staff-login">Staff Login</Link>
-            </Button>
             <Button asChild>
               <Link href="/admissions">Apply Now</Link>
             </Button>
@@ -128,11 +132,6 @@ export function Header() {
                   </div>
                 ))}
                 <div className="flex flex-col gap-2 mt-4 pt-4 border-t">
-                  <Button variant="outline" asChild>
-                    <Link href="/staff-login" onClick={() => setIsOpen(false)}>
-                      Staff Login
-                    </Link>
-                  </Button>
                   <Button asChild>
                     <Link href="/admissions" onClick={() => setIsOpen(false)}>
                       Apply Now

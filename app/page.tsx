@@ -31,20 +31,20 @@ const features = [
   {
     icon: Trophy,
     title: "Achievements",
-    description: "Consistent academic excellence and recognition at state and national levels",
+    description: "Consistent academic excellence and recognition",
   },
   {
     icon: Building,
     title: "Modern Facilities",
-    description: "State-of-the-art classrooms, labs, and sports infrastructure",
+    description: "State-of-the-art classrooms, labs, and sports playground",
   },
 ]
 
 const stats = [
-  { value: "50+", label: "Years of Excellence" },
+  { value: "13+", label: "Years of Excellence" },
   { value: "2500+", label: "Students" },
-  { value: "150+", label: "Faculty Members" },
-  { value: "98%", label: "University Placement" },
+  { value: "20:1", label: "Student-Teacher Ratio" },
+  { value: "100%", label: "High School Transition Rate" },
 ]
 
 const testimonials = [
@@ -108,8 +108,9 @@ export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       <main className="flex-1">
+
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gradient-to-br from-muted via-background to-secondary/30 py-20 lg:py-32">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(74,124,201,0.1),transparent_50%)]" />
@@ -117,16 +118,16 @@ export default function HomePage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <Badge variant="secondary" className="text-sm">
-                  Admissions Open for 2026-27
+                  Admissions Open for 2026-27 | Rajgarh & Jhansi Branch
                 </Badge>
                 <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-                  Shaping the{" "}
-                  <span className="text-primary">Future</span> of Tomorrow
+                  Welcome to{" "}
+                  <span className="text-primary">Little Flower English School</span>, Jhansi
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-                  At Brightwood Academy, we nurture young minds with quality education, 
-                  experienced faculty, and modern facilities to prepare students for 
-                  a successful future.
+                  Providing quality education at Ballampur Road, Rajgarh, Jhansi.
+                  At Little Flower English School, we focus on academic excellence, holistic development,
+                  and modern learning facilities to prepare your child for a bright future.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button size="lg" asChild>
@@ -143,11 +144,11 @@ export default function HomePage() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-muted">
                   <Image
-                    src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop"
+                    src="/Little Flower Engligh School.jpeg"
                     alt="Students learning together in a modern classroom"
                     width={800}
                     height={600}
-                    className="object-cover w-full h-full"
+                    className="object-cover object-[center_30%] w-full h-full"
                     priority
                   />
                 </div>
@@ -189,7 +190,7 @@ export default function HomePage() {
                 Why Choose Brightwood Academy?
               </h2>
               <p className="text-muted-foreground">
-                We provide a nurturing environment where students can excel academically 
+                We provide a nurturing environment where students can excel academically
                 and grow as responsible individuals.
               </p>
             </div>
@@ -230,8 +231,8 @@ export default function HomePage() {
                   A Legacy of Excellence Since 1975
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  For over five decades, Brightwood Academy has been at the forefront of 
-                  educational excellence. Our commitment to holistic development ensures 
+                  For over five decades, Brightwood Academy has been at the forefront of
+                  educational excellence. Our commitment to holistic development ensures
                   that every student receives the attention and resources they need to succeed.
                 </p>
                 <ul className="space-y-3">
@@ -374,7 +375,7 @@ export default function HomePage() {
               Ready to Join Our Community?
             </h2>
             <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">
-              Take the first step towards a brighter future. Apply now for admission 
+              Take the first step towards a brighter future. Apply now for admission
               to Brightwood Academy and become part of our growing family.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
