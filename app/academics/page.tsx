@@ -37,15 +37,8 @@ const programs = [
     level: "Middle School",
     grades: "Grades 6-8",
     description: "Developing critical thinking and preparing students for advanced studies",
-    subjects: ["English Literature", "Advanced Math", "Physical Science", "History & Civics", "Computer Science", "Foreign Language", "Arts"],
+    subjects: ["English Literature", "Advanced Math", "Physical Science", "History & Civics", "Computer Science", "Arts"],
     image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop",
-  },
-  {
-    level: "High School",
-    grades: "Grades 9-12",
-    description: "Specialized streams preparing students for higher education and careers",
-    subjects: ["Physics", "Chemistry", "Biology", "Mathematics", "Computer Science", "Economics", "Psychology"],
-    image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=400&fit=crop",
   },
 ]
 
@@ -54,19 +47,19 @@ const departments = [
   { icon: Calculator, name: "Mathematics", description: "Algebra, Geometry, Calculus, Statistics" },
   { icon: BookOpen, name: "Language Arts", description: "English, Literature, Creative Writing" },
   { icon: Globe, name: "Social Studies", description: "History, Geography, Civics, Economics" },
-  { icon: Palette, name: "Fine Arts", description: "Visual Arts, Design, Photography" },
+  { icon: Palette, name: "Fine Arts", description: "Visual Arts, Design" },
   { icon: Music, name: "Performing Arts", description: "Music, Drama, Dance" },
 ]
 
 const extracurricular = [
   {
     category: "Sports",
-    activities: ["Basketball", "Soccer", "Swimming", "Track & Field", "Tennis", "Volleyball"],
-    image: "https://images.unsplash.com/photo-1461896836934- voices-c7c64b9e?w=600&h=400&fit=crop",
+    activities: ["Basketball", "Soccer", "Tennis", "Volleyball"],
+    image: "https://images.unsplash.com/photo-1490326149782-dd42fa59bd9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     category: "Clubs",
-    activities: ["Debate Club", "Robotics Club", "Drama Society", "Photography Club", "Environmental Club", "Chess Club"],
+    activities: ["Debate Club", "Drama Society", "Photography Club", "Environmental Club", "Chess Club"],
     image: "https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?w=600&h=400&fit=crop",
   },
   {
@@ -74,13 +67,6 @@ const extracurricular = [
     activities: ["Choir", "Orchestra", "Dance Troupe", "Art Exhibition", "Cultural Festival", "Theatre Productions"],
     image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&h=400&fit=crop",
   },
-]
-
-const achievements = [
-  { title: "State Science Olympiad", position: "1st Place", year: "2025" },
-  { title: "National Math Competition", position: "Top 10", year: "2025" },
-  { title: "Regional Debate Championship", position: "Winners", year: "2024" },
-  { title: "Inter-School Sports Meet", position: "Overall Champions", year: "2024" },
 ]
 
 export default function AcademicsPage() {
@@ -114,16 +100,15 @@ export default function AcademicsPage() {
                 Academic Programs
               </h2>
               <p className="text-muted-foreground">
-                From primary to high school, our programs are tailored to meet the 
+                From primary to middle school, our programs are tailored to meet the 
                 developmental needs of each age group.
               </p>
             </div>
 
             <Tabs defaultValue="primary" className="max-w-5xl mx-auto">
-              <TabsList className="grid w-full grid-cols-3 mb-8">
+              <TabsList className="grid w-full grid-cols-2 mb-8">
                 <TabsTrigger value="primary">Primary School</TabsTrigger>
                 <TabsTrigger value="middle">Middle School</TabsTrigger>
-                <TabsTrigger value="high">High School</TabsTrigger>
               </TabsList>
               {programs.map((program, index) => (
                 <TabsContent key={index} value={program.level.split(" ")[0].toLowerCase()}>
@@ -201,7 +186,7 @@ export default function AcademicsPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               {extracurricular.map((item, index) => (
-                <Card key={index} className="border-0 shadow-lg overflow-hidden">
+                <Card key={index} className="border-0 overflow-hidden">
                   <div className="aspect-video relative">
                     <Image
                       src={item.image}
@@ -230,33 +215,6 @@ export default function AcademicsPage() {
           </div>
         </section>
 
-        {/* Student Achievements */}
-        <section className="py-20 bg-secondary/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <Trophy className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
-                Student Achievements
-              </h2>
-              <p className="text-muted-foreground">
-                Our students consistently excel in academics, sports, and other competitions.
-              </p>
-            </div>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {achievements.map((achievement, index) => (
-                <Card key={index} className="border-0 shadow-lg text-center">
-                  <CardContent className="p-6">
-                    <Badge variant="secondary" className="mb-3">{achievement.year}</Badge>
-                    <h3 className="font-semibold mb-2">{achievement.title}</h3>
-                    <p className="text-primary font-bold">{achievement.position}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* CTA Section */}
         <section className="py-20 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
@@ -273,7 +231,7 @@ export default function AcademicsPage() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+              <Button size="lg" variant="outline" className="border-primary-foreground text-foreground hover:bg-primary-foreground hover:text-primary" asChild>
                 <Link href="/contact">Request Information</Link>
               </Button>
             </div>

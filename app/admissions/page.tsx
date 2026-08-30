@@ -69,20 +69,20 @@ const feeStructure = [
 
 const faqs = [
   {
-    question: "What is the age requirement for admission?",
-    answer: "Children must be 5 years old by September 1st of the enrollment year for Grade 1. Age requirements for other grades are based on the standard academic year.",
+    question: "What classes does the school offer?",
+    answer: "Our school provides education for students up to Class 9, with a focus on strong academic foundations, good values, discipline, and overall development.",
   },
   {
-    question: "Is there an entrance exam?",
-    answer: "Yes, students applying for Grades 2-12 are required to take an age-appropriate assessment test. Grade 1 students participate in a readiness assessment.",
+    question: "How can I apply for admission?",
+    answer: "Parents can contact the school office to enquire about admissions, available seats, required documents, and the admission process for the desired class.",
   },
   {
-    question: "Are scholarships available?",
-    answer: "Yes, we offer merit-based scholarships and financial aid programs. Please contact our admissions office for more information.",
+    question: "What documents are required for admission?",
+    answer: "Parents are generally required to provide the student's previous school records and other necessary documents. Please contact the school office for the complete list of documents required.",
   },
   {
-    question: "What is the student-to-teacher ratio?",
-    answer: "We maintain a low student-to-teacher ratio of 15:1 to ensure personalized attention for each student.",
+    question: "How does the school support students in their studies?",
+    answer: "Our teachers provide guidance and regular support to help students understand their subjects, improve their learning, and develop confidence in their studies.",
   },
 ]
 
@@ -107,7 +107,7 @@ export default function AdmissionsPage() {
               <div>
                 <Badge variant="secondary" className="mb-4">Admissions Open 2026-27</Badge>
                 <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-                  Begin Your Journey at Brightwood Academy
+                  Begin Your Journey at Little Flower English School
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   We welcome students who are eager to learn, grow, and contribute to our 
@@ -128,14 +128,15 @@ export default function AdmissionsPage() {
                   </Button>
                 </div>
               </div>
+
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop"
-                    alt="Happy students at Brightwood Academy"
+                    src="/Little Flower Engligh School.jpeg"
+                    alt="Happy students at Little Flower English School"
                     width={800}
                     height={600}
-                    className="object-cover w-full h-full"
+                    className="object-cover object-[center_30%] w-full h-full"
                     priority
                   />
                 </div>
@@ -199,33 +200,6 @@ export default function AdmissionsPage() {
                 </ul>
               </div>
               <div>
-                <Card className="border-0 shadow-xl">
-                  <CardHeader>
-                    <CardTitle className="font-serif">Fee Structure</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      {feeStructure.map((fee, index) => (
-                        <div key={index} className="p-4 rounded-lg bg-muted">
-                          <h4 className="font-semibold mb-2">{fee.level}</h4>
-                          <div className="grid grid-cols-2 gap-4 text-sm">
-                            <div>
-                              <p className="text-muted-foreground">Admission Fee</p>
-                              <p className="font-semibold text-primary">{fee.admission}</p>
-                            </div>
-                            <div>
-                              <p className="text-muted-foreground">Annual Tuition</p>
-                              <p className="font-semibold text-primary">{fee.annual}</p>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                    <p className="text-xs text-muted-foreground mt-4">
-                      * Additional fees may apply for transportation, meals, and extracurricular activities.
-                    </p>
-                  </CardContent>
-                </Card>
               </div>
             </div>
           </div>
@@ -384,11 +358,11 @@ export default function AdmissionsPage() {
               <div className="flex flex-wrap justify-center gap-8 mb-8">
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+91 94527 36720</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5" />
-                  <span>admissions@brightwoodacademy.edu</span>
+                  <span>englishschoollittleflower@gmail.com</span>
                 </div>
               </div>
               <Button size="lg" variant="secondary" asChild>

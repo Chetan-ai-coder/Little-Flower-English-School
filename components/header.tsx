@@ -25,7 +25,6 @@ const navItems = [
     ],
   },
   { label: "Events", href: "/events" },
-  { label: "News", href: "/news" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
 ]
@@ -49,7 +48,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <div className="flex h-10 w-10 items-center justify-center text-primary-foreground">
               <Image
-                src="/Little Flower English School/ Little Flower English School Logo.svg" // Make sure this exact file is uploaded in your ImageKit Media Library
+                src="/Little Flower English School/ Little Flower English School Logo.svg"
                 alt="Little Flower English School Logo"
                 width={150}
                 height={150}
@@ -105,7 +104,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <div className="flex flex-col gap-4 mt-8">
+              <div className="flex flex-col gap-4 mt-8 mx-4">
                 {navItems.map((item) => (
                   <div key={item.label}>
                     <Link

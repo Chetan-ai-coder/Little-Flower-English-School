@@ -19,6 +19,7 @@ import {
   GraduationCap,
   Trophy,
   PartyPopper,
+  ArrowRight,
 } from "lucide-react"
 
 const eventCategories = [
@@ -369,17 +370,18 @@ export default function EventsPage() {
         {/* CTA Section */}
         <section className="py-16 bg-secondary/30">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-4">
-              Want to Stay Updated?
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
+              Ready to Join Our Community?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-              Subscribe to our newsletter to receive updates about upcoming events and school news.
+              Take the first step towards a brighter future. Apply now for admission to Little Flower English School and become part of our growing family. Apply for Admission
             </p>
             <Button asChild>
-              <Link href="/contact">Subscribe to Newsletter</Link>
+              <Link href="/contact">Contact Us</Link>
             </Button>
           </div>
         </section>
+
       </main>
 
       <Footer />

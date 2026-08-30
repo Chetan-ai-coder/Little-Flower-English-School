@@ -27,17 +27,17 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    details: ["123 Education Lane", "Brightwood City, BC 12345"],
+    details: ["Ballampur Road Rajgarh Shiv Nagar Jhansi, Uttar Pradesh 284001, India"],
   },
   {
     icon: Phone,
     title: "Phone",
-    details: ["Main: +1 (555) 123-4567", "Admissions: +1 (555) 123-4568"],
+    details: ["Main: +91 93353 78839", "Admissions: +91 94527 36720"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@brightwoodacademy.edu", "admissions@brightwoodacademy.edu"],
+    details: ["englishschoollittleflower@gmail.com"],
   },
   {
     icon: Clock,
@@ -195,7 +195,7 @@ export default function ContactPage() {
                   </h2>
                   <div className="aspect-video rounded-xl overflow-hidden shadow-lg bg-muted">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.0866669372714!2d-74.00597168459463!3d40.71277627933024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Manhattan%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.5761514438077!2d78.54245978506809!3d25.38782807243129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39777beb38728b41%3A0x5a130ef4a3d0ae61!2sLittle%20flower%20english%20school!5e1!3m2!1sen!2sin!4v1788036115690!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
@@ -254,19 +254,11 @@ export default function ContactPage() {
                     <div className="space-y-3">
                       <div className="flex justify-between items-center text-sm">
                         <span className="text-muted-foreground">Principal&apos;s Office</span>
-                        <span className="font-medium">Ext. 101</span>
+                        <span className="font-medium">+91 93353 78839</span>
                       </div>
                       <div className="flex justify-between items-center text-sm">
                         <span className="text-muted-foreground">Admissions Office</span>
-                        <span className="font-medium">Ext. 102</span>
-                      </div>
-                      <div className="flex justify-between items-center text-sm">
-                        <span className="text-muted-foreground">Finance Department</span>
-                        <span className="font-medium">Ext. 103</span>
-                      </div>
-                      <div className="flex justify-between items-center text-sm">
-                        <span className="text-muted-foreground">Student Affairs</span>
-                        <span className="font-medium">Ext. 104</span>
+                        <span className="font-medium">+91 94527 36720</span>
                       </div>
                     </div>
                   </CardContent>
@@ -283,11 +275,11 @@ export default function ContactPage() {
               Schedule a Campus Visit
             </h2>
             <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">
-              Experience Brightwood Academy firsthand. Schedule a tour to explore our 
+              Experience Little Flower English School firsthand. Schedule a tour to explore our 
               campus, meet our faculty, and learn about our programs.
             </p>
             <Button size="lg" variant="secondary">
-              Book a Tour
+              Give us a call
             </Button>
           </div>
         </section>

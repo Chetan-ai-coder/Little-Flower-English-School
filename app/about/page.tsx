@@ -19,28 +19,28 @@ import {
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About Us | Brightwood Academy",
-  description: "Learn about Brightwood Academy's history, mission, vision, and values. Discover our commitment to educational excellence since 1975.",
+  title: "About Us | Little Flower English School Best School in Rajgarh, Jhansi",
+  description: "Learn about Little Flower English School's history, mission, vision, and values. Discover our commitment to educational excellence since 2011.",
 }
 
 const leadership = [
   {
-    name: "Dr. Elizabeth Warren",
+    name: "Mr. Mohan Puri Goswami",
+    role: "Managing Director (M.D.)",
+    image: "/Professional Office Portrait with Desk Details.png",
+    bio: "M.A. qualified education professional committed to supporting the school's growth and providing students with a positive learning environment.",
+  },
+  {
+    name: "Mrs. Jyoti Rajak",
     role: "Principal",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop",
-    bio: "With over 25 years in education, Dr. Warren leads our institution with passion and dedication to academic excellence.",
+    image: "/Principal Mrs. Jyoti Rajak at Her Desk.png",
+    bio: "M.A., B.Ed., CTET qualified educator focused on students' academic development, discipline, and overall growth.",
   },
   {
-    name: "Prof. Michael Chen",
-    role: "Vice Principal",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop",
-    bio: "Prof. Chen oversees curriculum development and ensures our academic programs meet the highest standards.",
-  },
-  {
-    name: "Dr. Sarah Johnson",
-    role: "Director of Student Affairs",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop",
-    bio: "Dr. Johnson focuses on student welfare and ensures a supportive environment for all learners.",
+    name: "Mrs. Isha Chourashiya",
+    role: "Accounts",
+    image: "Professional Office Portrait with Global Desk Accents.png",
+    bio: "B.L.Ed. qualified team member responsible for supporting the school's accounts and administrative activities.",
   },
 ]
 
@@ -91,6 +91,7 @@ export default function AboutPage() {
       <Header />
 
       <main className="flex-1">
+
         {/* Hero Section */}
         <section className="relative py-20 lg:py-28 bg-muted overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(74,124,201,0.1),transparent_50%)]" />
@@ -101,8 +102,8 @@ export default function AboutPage() {
                 A Legacy of Excellence in Education
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Since 1975, Brightwood Academy has been dedicated to providing 
-                exceptional education that prepares students for success in an 
+                Since 2011, Little Flower English School has been dedicated to providing
+                exceptional education that prepares students for success in an
                 ever-changing world.
               </p>
             </div>
@@ -119,19 +120,18 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Brightwood Academy was founded in 1975 by a group of visionary educators 
-                    who believed in the transformative power of quality education. What began 
-                    as a small school with just 50 students has grown into one of the most 
+                    Little Flower English School was founded in 2011 by a group of visionary educators
+                    who believed in the transformative power of quality education. What began
+                    as a small school with just 50 students has grown into one of the most
                     respected educational institutions in the region.
                   </p>
                   <p>
-                    Over the past five decades, we have remained committed to our founding 
-                    principles while continuously evolving to meet the needs of modern learners. 
-                    Our graduates have gone on to become leaders in various fields, from medicine 
-                    and engineering to arts and entrepreneurship.
+                    Over the past 15 Years, we have remained committed to our founding
+                    principles while continuously evolving to meet the needs of modern learners.
+                    Our teachers work closely with students to understand their learning needs and encourage them to participate actively in academics and school activities.
                   </p>
                   <p>
-                    Today, Brightwood Academy serves over 2,500 students and continues to uphold 
+                    Today, Little Flower English School serves over 2,500 students and continues to uphold
                     its tradition of academic excellence, character development, and community service.
                   </p>
                 </div>
@@ -139,8 +139,8 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop"
-                    alt="Historic view of Brightwood Academy campus"
+                    src="/Little Flower English School Trip.jpeg"
+                    alt="Little Flower English School Best School in Rajgarh "
                     width={800}
                     height={600}
                     className="object-cover w-full h-full"
@@ -159,7 +159,7 @@ export default function AboutPage() {
                 Our Vision & Mission
               </h2>
               <p className="text-muted-foreground">
-                Guided by our core values, we strive to create an environment where 
+                Guided by our core values, we strive to create an environment where
                 every student can thrive.
               </p>
             </div>
@@ -172,7 +172,7 @@ export default function AboutPage() {
                   </div>
                   <h3 className="font-serif text-xl font-bold mb-3">Our Vision</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To be a leading educational institution that nurtures future leaders 
+                    To be a leading educational institution that nurtures future leaders
                     who are academically excellent, morally upright, and globally competitive.
                   </p>
                 </CardContent>
@@ -185,8 +185,8 @@ export default function AboutPage() {
                   </div>
                   <h3 className="font-serif text-xl font-bold mb-3">Our Mission</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To provide quality education that develops the intellectual, physical, 
-                    emotional, and social aspects of each student, preparing them to become 
+                    To provide quality education that develops the intellectual, physical,
+                    emotional, and social aspects of each student, preparing them to become
                     responsible citizens and lifelong learners.
                   </p>
                 </CardContent>
@@ -255,27 +255,27 @@ export default function AboutPage() {
                     <div className="shrink-0">
                       <div className="w-32 h-32 rounded-full overflow-hidden">
                         <Image
-                          src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop"
-                          alt="Dr. Elizabeth Warren"
+                          src="/Principal Mrs. Jyoti Rajak at Her Desk.png"
+                          alt="Mrs. Jyoti Rajak"
                           width={128}
                           height={128}
-                          className="object-cover"
+                          className="object-top scale-180 object-cover w-full h-full"
                         />
                       </div>
                     </div>
                     <div>
                       <p className="text-muted-foreground leading-relaxed mb-4">
-                        &ldquo;At Brightwood Academy, we believe that every child has unique potential 
-                        waiting to be discovered and nurtured. Our role as educators extends beyond 
-                        imparting knowledge; we are committed to shaping character, fostering creativity, 
+                        &ldquo;At Little Flower English School, we believe that every child has unique potential
+                        waiting to be discovered and nurtured. Our role as educators extends beyond
+                        imparting knowledge; we are committed to shaping character, fostering creativity,
                         and instilling a lifelong love for learning.
                       </p>
                       <p className="text-muted-foreground leading-relaxed mb-4">
-                        I invite you to join our community and experience the difference that quality 
+                        I invite you to join our community and experience the difference that quality
                         education can make in your child&apos;s life.&rdquo;
                       </p>
-                      <p className="font-semibold text-foreground">Dr. Elizabeth Warren</p>
-                      <p className="text-sm text-primary">Principal, Brightwood Academy</p>
+                      <p className="font-semibold text-foreground">Mrs. Jyoti Rajak</p>
+                      <p className="text-sm text-primary">Principal, Little Flower English School</p>
                     </div>
                   </div>
                 </CardContent>
@@ -313,17 +313,17 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&h=400&fit=crop"
-                  alt="Main campus building"
+                  src="/Little Flower Engligh School.jpeg"
+                  alt="Little Flower English School Best School in Rajgarh"
                   width={600}
                   height={400}
-                  className="object-cover w-full h-full"
+                  className="object-cover object-[center_30%] w-full h-full"
                 />
               </div>
               <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop"
-                  alt="Library interior"
+                  src="/Little Flower English School Classroom.jpeg"
+                  alt="Little Flower English School Best School in Rajgarh"
                   width={600}
                   height={400}
                   className="object-cover w-full h-full"
@@ -331,11 +331,11 @@ export default function AboutPage() {
               </div>
               <div className="aspect-video rounded-xl overflow-hidden shadow-lg md:col-span-2 lg:col-span-1">
                 <Image
-                  src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&h=400&fit=crop"
-                  alt="Sports facilities"
+                  src="/Little Flower English School Trip.jpeg"
+                  alt="Little Flower English School Best School in Rajgarh"
                   width={600}
                   height={400}
-                  className="object-cover w-full h-full"
+                  className="object-cover object-[center_70%] w-full h-full"
                 />
               </div>
             </div>
@@ -358,7 +358,7 @@ export default function AboutPage() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+              <Button size="lg" variant="outline" className="border-primary-foreground text-foreground hover:bg-primary-foreground hover:text-primary" asChild>
                 <Link href="/contact">Schedule a Visit</Link>
               </Button>
             </div>

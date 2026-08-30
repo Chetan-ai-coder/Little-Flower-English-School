@@ -49,18 +49,18 @@ const stats = [
 
 const testimonials = [
   {
-    quote: "Brightwood Academy has transformed my child's approach to learning. The teachers are incredibly supportive and the curriculum is engaging.",
-    author: "Sarah Mitchell",
+    quote: "The teachers are supportive and give proper attention to every child. I am happy with the learning environment and the way my child is progressing.",
+    author: "Neha Sharma",
     role: "Parent",
   },
   {
-    quote: "The best decision I made was joining Brightwood. The opportunities for growth here are endless, both academically and personally.",
-    author: "James Chen",
-    role: "Alumni, Class of 2024",
+    quote: "The school provides a friendly environment where students can learn with confidence. The teachers encourage us to participate in different activities along with our studies.",
+    author: "Aarav Gupta",
+    role: "Student",
   },
   {
-    quote: "As a parent, I appreciate the emphasis on character development alongside academics. My children are thriving here.",
-    author: "Maria Rodriguez",
+    quote: "I appreciate the school’s focus on education, discipline, and good values. The teachers are approachable and regularly guide students in their studies.",
+    author: "Pooja Yadav",
     role: "Parent",
   },
 ]
@@ -72,12 +72,12 @@ const upcomingEvents = [
     description: "Students showcase innovative projects",
   },
   {
-    date: "Apr 22",
+    date: "May 10",
     title: "Parent-Teacher Meeting",
     description: "Discuss student progress and goals",
   },
   {
-    date: "May 5",
+    date: "August 8",
     title: "Sports Day",
     description: "Annual athletic competition and celebration",
   },
@@ -85,23 +85,23 @@ const upcomingEvents = [
 
 const latestNews = [
   {
-    category: "Achievement",
-    title: "Students Win State Math Olympiad",
-    excerpt: "Our team secured first place at the state-level competition...",
+    category: "School Activity",
+    title: "Encouraging Young Minds Through Learning & Activities",
+    excerpt: "Our students actively participate in academic, cultural, and extracurricular...",
     date: "March 20, 2026",
   },
   {
-    category: "Event",
-    title: "New Science Lab Inauguration",
-    excerpt: "State-of-the-art laboratory facilities now open for students...",
-    date: "March 15, 2026",
-  },
-  {
-    category: "Announcement",
-    title: "Summer Camp Registrations Open",
-    excerpt: "Join our enriching summer programs designed for all age groups...",
-    date: "March 10, 2026",
-  },
+  category: "Event",
+  title: "Annual School Activities",
+  excerpt: "Students take part in academic, cultural, and extracurricular activities that encourage learning, confidence, and teamwork...",
+  date: "April 23, 2026",
+},
+{
+  category: "Announcement",
+  title: "Admissions Open for New Session",
+  excerpt: "Admissions are open for students seeking quality education and a supportive learning environment in Rajgarh, Jhansi...",
+  date: "August 10, 2026",
+},
 ]
 
 export default function HomePage() {
@@ -152,17 +152,6 @@ export default function HomePage() {
                     priority
                   />
                 </div>
-                <div className="absolute -bottom-6 -left-6 bg-card p-4 rounded-xl shadow-lg border hidden md:block">
-                  <div className="flex items-center gap-3">
-                    <div className="h-12 w-12 rounded-full bg-secondary flex items-center justify-center">
-                      <GraduationCap className="h-6 w-6 text-accent" />
-                    </div>
-                    <div>
-                      <p className="font-semibold">2500+ Students</p>
-                      <p className="text-sm text-muted-foreground">Growing Community</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -187,7 +176,7 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Why Choose Brightwood Academy?
+                Why Choose Little Flower English School?
               </h2>
               <p className="text-muted-foreground">
                 We provide a nurturing environment where students can excel academically
@@ -217,8 +206,8 @@ export default function HomePage() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=600&fit=crop"
-                    alt="School campus with modern architecture"
+                    src="/Little Flower English School Science Class.jpeg"
+                    alt="Little Flower English School Best School in Jhansi"
                     width={800}
                     height={600}
                     className="object-cover w-full h-full"
@@ -228,10 +217,10 @@ export default function HomePage() {
               <div className="space-y-6">
                 <Badge variant="outline">About Us</Badge>
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
-                  A Legacy of Excellence Since 1975
+                  A Legacy of Excellence Since 2011
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  For over five decades, Brightwood Academy has been at the forefront of
+                  For over 15 years, Little Flower English School has been at the forefront of
                   educational excellence. Our commitment to holistic development ensures
                   that every student receives the attention and resources they need to succeed.
                 </p>
@@ -240,19 +229,19 @@ export default function HomePage() {
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center">
                       <Star className="h-3 w-3 text-accent" />
                     </div>
-                    <span className="text-foreground">Accredited by National Education Board</span>
+                    <span className="text-foreground">Focus on strong academic fundamentals</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center">
                       <Star className="h-3 w-3 text-accent" />
                     </div>
-                    <span className="text-foreground">Award-winning STEM programs</span>
+                    <span className="text-foreground">Personal attention and supportive teaching</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="h-6 w-6 rounded-full bg-secondary flex items-center justify-center">
                       <Star className="h-3 w-3 text-accent" />
                     </div>
-                    <span className="text-foreground">Global alumni network</span>
+                    <span className="text-foreground">Focus on discipline, values & overall development</span>
                   </li>
                 </ul>
                 <Button variant="outline" asChild>
@@ -339,7 +328,7 @@ export default function HomePage() {
                 What Our Community Says
               </h2>
               <p className="text-muted-foreground">
-                Hear from parents, students, and alumni about their experience at Brightwood Academy.
+                Hear from parents and students about their experience at our Little Flower English School.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
@@ -376,7 +365,7 @@ export default function HomePage() {
             </h2>
             <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">
               Take the first step towards a brighter future. Apply now for admission
-              to Brightwood Academy and become part of our growing family.
+              to Little Flower English School and become part of our growing family.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" variant="secondary" asChild>
@@ -385,7 +374,7 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+              <Button size="lg" variant="outline" className="border-primary-foreground text-foreground hover:bg-primary-foreground hover:text-primary" asChild>
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>

@@ -29,14 +29,14 @@ const categories = [
 const galleryImages = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=600&fit=crop",
+    src: "/Little Flower Engligh School.jpeg",
     alt: "School library",
     category: "campus",
     caption: "Our state-of-the-art library",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop",
+    src: "/Little Flower English School Certificate.jpeg",
     alt: "Graduation ceremony",
     category: "events",
     caption: "Annual graduation ceremony 2025",
@@ -50,14 +50,14 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop",
+    src: "/Little Flower English School Classroom.jpeg",
     alt: "Main building",
     category: "campus",
     caption: "Main campus building",
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop",
+    src: "/Little Flower English School Trip.jpeg",
     alt: "Science fair",
     category: "academics",
     caption: "National Science Fair competition",
@@ -71,7 +71,7 @@ const galleryImages = [
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=800&h=600&fit=crop",
+    src: "/Little Flower English School Science Class.jpeg",
     alt: "Students studying",
     category: "academics",
     caption: "Collaborative learning in action",
